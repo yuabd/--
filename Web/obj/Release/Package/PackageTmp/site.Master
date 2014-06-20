@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="Song.Web.site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%=Maticsoft.Common.webcommand.GetCompayInfo3()%></title>
+    
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="head">
+        <div class="tel">
+            <img src="/uploadfile/pic/<%=Maticsoft.Common.webcommand.GetCompayInfo4()%>" width="285" height="82"></div>
+        <div class="seacher">
+            <ul>
+                <li class="input1">
+                    <asp:TextBox ID="searchkey" runat="server" Text="产品搜索" onfocus="if (this.value=='产品搜索')this.value=''"
+                        onblur="if (this.value=='')this.value='产品搜索'"></asp:TextBox></li>
+                <li>
+                    <asp:Button ID="seaarch" runat="server" Text="" CssClass="sbg" OnClick="seaarch_Click" /><%--<input type="image" name="imageField" src="images/index_10.jpg">--%>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.aspx">
+                <img src="/uploadfile/pic/<%=Maticsoft.Common.webcommand.GetCompayInfo5()%>" width="178" height="82" border="0"></a></div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li style="border-left: 0px;"><a href="index.aspx">首页</a></li>
+            <asp:Repeater ID="Repeater5" runat="server">
+                <ItemTemplate>
+                    <li><a href="product.aspx?fid=<%#Eval("id") %>">
+                        <%#Eval("title") %></a></li>
+                </ItemTemplate>
+            </asp:Repeater>
+            <li style="border-right: 0px;"><a href="product.aspx?fid=14">其它产品</a></li>
+        </ul>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <div id="foot">
+        <font>
+            <asp:Repeater ID="Repeater10" runat="server">
+                <ItemTemplate>
+                    <a href="about.aspx?id=<%#Eval("id") %>">
+                        <%#Eval("ClassName")%></a> &nbsp;&nbsp;
+                </ItemTemplate>
+            </asp:Repeater>
+            &nbsp;&nbsp; &nbsp;&nbsp; </font><span>Copyright © 2008-2013&nbsp; 海德堡家具<br>
+            </span>
+    </div>
+    <div id="siderIMchat" style="right: 0;top: 200px;">
+        <div id="siderIMchat_hiddenbar">
+        </div>
+        <div id="siderIMchat_main">
+            <div class="top">
+            </div>
+            <div class="infobox">
+                营业时间<br>
+                8:00-24:00</div>
+            <div class="bg ">
+                <ul class="clearfix">
+                    <li><a target="_blank" href="tencent://message/?uin=1826689585&&Site=LICENSE_ShopEx&&Menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=1:1826689585:1" /></a><br />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 客服1 </li>
+                    <li><a target="_blank" href="tencent://message/?uin=1826689585&&Site=LICENSE_ShopEx&&Menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=1:1826689585:1" /></a><br />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 客服2 </li>
+                    <li><a target="_blank" href="tencent://message/?uin=1826689585&&Site=LICENSE_ShopEx&&Menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=1:1826689585:1" /></a><br />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 业务经理 </li>
+                    <li><a target="_blank" href="tencent://message/?uin=1826689585&&Site=LICENSE_ShopEx&&Menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=1:1826689585:1" /></a><br />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 业务经理 </li>
+                    <li><a target="_blank" href="tencent://message/?uin=1826689585&&Site=LICENSE_ShopEx&&Menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=1:1826689585:1" /></a><br />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 售后服务 </li>
+                    <li><a target="_blank" href="tencent://message/?uin=1826689585&&Site=LICENSE_ShopEx&&Menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=1:1826689585:1" /></a><br />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 设计师 </li>
+                </ul>
+                <div class="textcenter pushdown-2">
+                    <span id="closeSiderIMchat" class="lnk">关闭在线客服</span></div>
+            </div>
+            <div class="bottom">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery("#siderIMchat_hiddenbar").mouseenter(function () {
+                jQuery("#siderIMchat_hiddenbar").css({ "display": "none" });
+                jQuery("#siderIMchat_main").css({ "display": "block" });
+            });
+
+            jQuery("#closeSiderIMchat").click(function () {
+                jQuery("#siderIMchat_main").css({ "display": "none" });
+                jQuery("#siderIMchat_hiddenbar").css({ "display": "block" });
+            });
+        });
+    </script>
+  
+    </form>
+</body>
+</html>

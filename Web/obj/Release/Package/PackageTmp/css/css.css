@@ -1,0 +1,138 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #676767;
+	margin:0px auto;
+}
+td,input,font{font-size:12px;font-family:Arial, Helvetica, sans-serif;}
+ul,li,form{ margin:0px; list-style:none; padding:0px;}
+.sbg
+{
+ background: url("../images/index_10.jpg") no-repeat;  
+ width: 49px;
+ height: 25px;
+ border: 0;
+ cursor: pointer;
+}
+#head{ width:1004px; height:auto; margin:0px auto; overflow:auto;}
+#head .tel{ width:285px; height:82px; float:left;}
+#head .logo{ width:178px; height:82px; float: right;}
+#head .seacher{ width:541px; height:82px; float:left;}
+#head .seacher ul{ margin-left:102px; height:26px; margin-top:26px;}
+#head .seacher li{ width:auto; height:26px; float:left;}
+#head .seacher .input1{ width:282px; height:26px; background:url(../images/index_07.jpg) no-repeat center; margin-right:8px;}
+#head .seacher .input1 input{ background:none; border:none; width:270px; line-height:24px; height:24px; margin-left:5px;_margin-left:3px;}
+
+
+#menu{ width:1004px; height:auto; margin:0px auto; overflow:auto; background:#808080; overflow-x:hidden;}
+#menu ul{ width:1006px; height:35px; font-size:14px; font-weight:bold; color:#FFFFFF;}
+#menu li{ border-right:1px solid #BABABA; border-left:1px solid #515151; float: left; line-height:35px; text-align:center; width:124px;}
+#menu a:link,#menu a:visited{color:#fff; display:block;width:124px;height:35px; }
+#menu a:hover{color: #fff; background:#800000; display:block;}
+
+#banner{ width:750px; height:auto; margin:0px auto; overflow:hidden;}
+
+#main{ width:1004px; height:auto; margin:0px auto; overflow:hidden;}
+#main .left{ width:247px; height:auto; float:left; margin-right:5px; overflow:hidden;}
+#main .left .Service{ width:247px; height:auto;}
+#main .left .Service img{ margin-bottom:4px;}
+#main .left .promenuborder{ width:247px; height:8px;}
+#main .left .promenu{border-left:1px solid #858585; border-right:1px solid #858585; height:1056px; padding-top:12px; padding-left:11px; overflow: visible;}
+#main .left .promenu .ban{ width:218px; height:23px; background:#858585; color:#FFFFFF; line-height:23px; font-weight:bold;}
+
+#main .left .promenu ul{ width:218px; height:auto; margin:5px 0px ;}
+#main .left .promenu li{ width:218px; height:35px; line-height:35px; border-bottom:1px dashed #E1E1E1;}
+#main .left .promenu li strong{ color:#78031E; font-weight:bold; font-size:14px;}
+
+#main .right{ width:751px; height:auto; float:left; overflow:hidden;}
+#main .right h3{ margin:0px; height:47px; width:751px; line-height:47px; background:url(../images/index_20.jpg); font-size:14px; color:#434343; overflow:auto; margin-top: 10px;}
+#main .right h3 span{ float:left; padding-left:10px;}
+#main .right .pro{ width:751px; height:auto; overflow:auto; margin:7px auto 0px auto; overflow:hidden;}
+#main .right .pro ul{ width:781px; height:auto;}
+
+#main .right .pro li{ width:373px; margin-right:6px; height:241px; float:left; margin-bottom:3px;}
+#main .right .pro span a{ height:28px; line-height:28px; color:#FFFFFF; font-weight:bold; font-size:14px; background:#858585 url(../images/index_47.gif) center left no-repeat; display:block; padding-left:20px; margin-top:0px; margin-bottom:8px;}
+#main .right .pro span a:hover {
+	color: #ffffff; background:#78031E url(../images/index_47.gif) center left no-repeat;
+}
+
+/*#main .right .pro li{ width:373px; margin-right:6px; height:500px; float:left; margin-bottom:3px;}
+#main .right .pro a{ height: auto; line-height:28px; color:#FFFFFF; font-weight:bold; font-size:14px; background:#858585 url(images/protitle.jpg) left bottom no-repeat; display:block; }
+#main .right .pro img{ padding-bottom:3px; background:#FFFFFF;}
+
+#main .right .pro a:hover {
+	color: #ffffff; background:#78031E url(images/protitle2.jpg) left bottom no-repeat;
+}*/
+
+#foot{ width:1004px; height:auto; overflow:auto; border-top:2px solid #333333; line-height:40px; font-weight:bold; margin:5px auto; color:#3F3F3F;}
+#foot font{ float:left;}
+#foot span{ float:right;}
+
+#main2{ width:1004px; height:auto; margin:5px auto 0px auto; overflow:auto; background:url(../images/leftbg.jpg) left repeat-y;}
+#main2 .left{ width:245px; height: auto; float:left; margin-right:7px; background:#F7F6EE; overflow:auto;}
+#main2 .left .promenuborder{ width:245px; height:6px;}
+#main2 .left .promenu{ padding-top:12px; padding-left:11px; overflow:auto; padding-bottom:105px;}
+#main2 .left .promenu .ban{ width:218px; height:23px; background:#858585; color:#FFFFFF; line-height:23px; font-weight:bold;}
+#main2 .left .promenu ul{ width:218px; height:auto; margin:5px 0px;}
+#main2 .left .promenu li{ width:218px; height:35px; line-height:35px; border-bottom:1px dashed #E1E1E1;}
+#main2 .left .promenu li strong{ color:#78031E; font-weight:bold; font-size:14px;}
+
+#main2 .right{ width:751px; height:auto; float:left; overflow:auto;}
+#main2 .right h3{ margin:0px; height:47px; width:751px; line-height:47px; background:url(../images/index_20.jpg); font-size:14px; color:#434343; overflow:auto;}
+#main2 .right .text{ width:auto; padding:0px 25px; color:#434343; line-height:25px;}
+#main2 .right .pro{ width:751px; height: auto; overflow:auto; margin:7px auto 0px auto; overflow:hidden;}
+#main2 .right .pro ul{ width:791px; height:auto; margin:5px; margin-left:13px; _margin-left:13px;}
+#main2 .right .pro li{ width:232px; margin-right:20px;_margin-right:17px; height:230px; float:left; margin-bottom:8px; text-align:left; font-weight:100; line-height:25px; line-height:150%;}
+#main2 .right .pro li img{ margin-bottom:5px; border:1px #CCCCCC dotted;}
+#main2 .right .pro li span{ color:#720000; font-size:13px;}
+#main2 .right .page{ width:751px; height:25px; margin:10px auto; text-align:center;}
+#main2 .right .page input{ background: url(../images/pro_13.jpg); height:19px; border:1px solid #C9C9C9; margin:0px 3px; line-height:16px;}
+
+#pro_info{ width:1004px; height:auto; overflow:hidden; margin:18px auto;}
+#pro_info .left{ width:491px; height:350px; float:left; margin-right:30px;}
+#pro_info .right{ width:462px; height:350px; float:left;}
+#pro_info .right h3{ width:432px; border-bottom:1px solid #676767; font-size:16px; font-weight:bold; margin:0px; height:38px; line-height:38px; margin-top:10px;}
+#pro_info .right .info{width:422px; margin:0px 10px; line-height:25px; color:#000000; height:295px; padding-top:5px; font-size:14px;}
+#pro_info .right .info strong{ color:#676767; font-weight:normal;}
+#pro_info .right .info span{ color:#800000; font-weight:bold;}
+#pro_info .right .info font{ font-size:24px;}
+.bigimg{position:absolute; margin-top:320px;}
+*+html .bigimg{position:absolute; margin-top:320px;}
+*html .bigimg{position:absolute; margin-top:320px;}
+
+
+#pro_help{ width:1004px; height:auto; overflow:hidden; margin:0px auto 5px auto; border-top:1px solid #E8E8E8; padding-top:15px;}
+#pro_help .info{ width:1000px; height:auto; float:left; line-height:24px; margin-right:6px; padding-left:10px;}
+#leftfoot{ width:1004px; height:auto; margin:0px auto 5px auto; overflow:auto;}
+
+.productNavigation{ width:218px; height:auto; line-height:35px; overflow:auto; overflow-x:hidden; margin:10px 0px;}
+.navItem{border-bottom:1px dashed #E1E1E1; width:208px; padding-left:10px; font-weight:bold;}
+.navigationBlock{ width:auto;}
+.subItem{border-bottom:1px dashed #E1E1E1; width:208px; padding-left:10px;}
+.navToggle{ float:right; color:#78031E;}
+
+a:link {
+	color: #676767;
+	text-decoration: none;
+}
+a:visited {
+	color: #676767;
+	text-decoration: none;
+}
+a:hover {
+	color: #78031E;
+	text-decoration: none;
+}
+a:active {
+	color: #78031E;
+	text-decoration: none;
+}
+
+
+#main .right .pro1{ width:751px; height:723px; overflow:auto; margin:7px auto 0px auto; overflow:hidden;}
+#main .right .pro1 ul{ width:781px; height:auto;}
+#main .right .pro1 li{ width:373px; margin-right:6px; height:240px; float:left; margin-bottom:3px;}
+#main .right .pro1 a{ height:28px; line-height:28px; color:#FFFFFF; font-weight:bold; font-size:14px; background:#858585 url(../images/index_47.gif) center left no-repeat; display:block; padding-left:20px; margin-top:3px;}
+#main .right .pro1 a:hover {
+	color: #ffffff; background:#78031E url(../images/index_47.gif) center left no-repeat;
+}

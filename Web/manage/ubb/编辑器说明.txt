@@ -1,0 +1,26 @@
+一个简单好用的UBB编辑器(含代码)
+2008-09-28 06:52:50 来源:CHINAZ用户投稿 作者:网页设计大本营 【大 中 小】 评论：0 条
+收藏此篇精彩内容到： 
+
+    现在的在线编辑器有很多，且功能强大，比如eWebEditor，但也占用空间大，一些简单的论坛、留言板并不还需要太强大的功能，HtmlEditor就是这样一个编辑器，简单漂亮，调用也方便，推荐大家使用。
+
+调用时代码，
+提交页：  <form method="POST" action="Post.asp" name="aaa">
+ <input name="Title" size="50">
+<textarea name="content" style="display:none"></textarea> 
+<iframe id="Editor" name="Editor" src="HtmlEditor/index.html?ID=content" frameborder="0" marginheight="0"     marginwidth="0" scrolling="No" style="height:320px;width:100%"></iframe> 
+<input type="submit"   value="确定" name="button">
+</form> 
+ 
+
+ 处理页：
+....
+
+recordset1.addnew()
+recordset1("zt")=Request("Title")
+recordset1("nr")=Request("Content")
+recordset1.update
+
+....
+ 
+

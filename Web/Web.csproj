@@ -1,0 +1,1285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Song.Web</RootNamespace>
+    <AssemblyName>Song.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\工具\dll\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="URLRewriter, Version=1.0.1495.18710, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\URLRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VerifyColorCode_51aspx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\VerifyColorCode_51aspx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\#aetere-sdfei343x9j34u.mdb" />
+    <Content Include="Category.aspx" />
+    <Content Include="css\global.css" />
+    <Content Include="css\images\logo.png" />
+    <Content Include="css\images\spitr_all.png" />
+    <Content Include="css\images\top_bg.jpg" />
+    <Content Include="css\images\top_san.png" />
+    <Content Include="css\master.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\Style.css" />
+    <Content Include="Detail.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\arttemplate.js" />
+    <Content Include="js\common.js" />
+    <Content Include="css\dialog.css" />
+    <Content Include="js\dialog.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery-placeholder.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\template.js" />
+    <Content Include="js\Validform.min.js" />
+    <Content Include="lib\URLRewriter.dll" />
+    <Content Include="manage\AddUser.aspx" />
+    <Content Include="manage\AjaxWebService.aspx" />
+    <Content Include="manage\Btn.aspx" />
+    <Content Include="manage\ClassManage.aspx" />
+    <Content Include="manage\CompanyInfo.aspx" />
+    <Content Include="manage\control\MenuList.ascx" />
+    <Content Include="manage\css\css.css" />
+    <Content Include="manage\css\fox.css" />
+    <Content Include="manage\css\popWin.css" />
+    <Content Include="manage\css\skin.css" />
+    <Content Include="manage\dafckbo\chinaz.com.txt" />
+    <Content Include="manage\dafckbo\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="manage\dafckbo\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="manage\dafckbo\editor\css\fck_editorarea.css" />
+    <Content Include="manage\dafckbo\editor\css\fck_internal.css" />
+    <Content Include="manage\dafckbo\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="manage\dafckbo\editor\css\images\block_address.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_blockquote.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_div.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_h1.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_h2.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_h3.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_h4.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_h5.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_h6.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_p.png" />
+    <Content Include="manage\dafckbo\editor\css\images\block_pre.png" />
+    <Content Include="manage\dafckbo\editor\css\images\fck_anchor.gif" />
+    <Content Include="manage\dafckbo\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="manage\dafckbo\editor\css\images\fck_hiddenfield.gif" />
+    <Content Include="manage\dafckbo\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="manage\dafckbo\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="manage\dafckbo\editor\dialog\common\images\locked.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\common\images\reset.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_about.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_anchor.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_button.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_checkbox.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_colorselector.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_docprops.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_find.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_flash.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_form.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_image.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_link.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_listprop.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_paste.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_radiobutton.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_replace.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_select.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_smiley.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_source.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_specialchar.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\controls.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_table.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_tablecell.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_template.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_textarea.html" />
+    <Content Include="manage\dafckbo\editor\dialog\fck_textfield.html" />
+    <Content Include="manage\dafckbo\editor\dtd\fck_dtd_test.html" />
+    <Content Include="manage\dafckbo\editor\dtd\fck_xhtml10strict.js" />
+    <Content Include="manage\dafckbo\editor\dtd\fck_xhtml10transitional.js" />
+    <Content Include="manage\dafckbo\editor\fckdebug.html" />
+    <Content Include="manage\dafckbo\editor\fckdialog.html" />
+    <Content Include="manage\dafckbo\editor\fckeditor.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\browser.css" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\browser.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\png.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\png.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="manage\dafckbo\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\basexml.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\class_upload.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\commands.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\config.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\connector.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\io.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\upload.asp" />
+    <Content Include="manage\dafckbo\editor\filemanager\connectors\asp\util.asp" />
+    <Content Include="manage\dafckbo\editor\images\anchor.gif" />
+    <Content Include="manage\dafckbo\editor\images\arrow_ltr.gif" />
+    <Content Include="manage\dafckbo\editor\images\arrow_rtl.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\cake.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\heart.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="manage\dafckbo\editor\images\spacer.gif" />
+    <Content Include="manage\dafckbo\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="manage\dafckbo\editor\js\fckeditorcode_ie.js" />
+    <Content Include="manage\dafckbo\editor\lang\en.js" />
+    <Content Include="manage\dafckbo\editor\lang\zh-cn.js" />
+    <Content Include="manage\dafckbo\editor\lang\zh.js" />
+    <Content Include="manage\dafckbo\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\plugins\bbcode\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\plugins\dragresizetable\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\lang\en.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\lang\fr.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\lang\it.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\lang\pl.js" />
+    <Content Include="manage\dafckbo\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\lang\en.js" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\lang\zh-cn.js" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\loading.gif" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\remoteupload.gif" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\remoteupload.htm" />
+    <Content Include="manage\dafckbo\editor\plugins\remoteupload\save.asp" />
+    <Content Include="manage\dafckbo\editor\plugins\simplecommands\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\plugins\tablecommands\fckplugin.js" />
+    <Content Include="manage\dafckbo\editor\skins\default\fck_dialog.css" />
+    <Content Include="manage\dafckbo\editor\skins\default\fck_editor.css" />
+    <Content Include="manage\dafckbo\editor\skins\default\fck_strip.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.arrowright.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.buttonarrow.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.buttonbg.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.collapse.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.end.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.expand.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.separator.gif" />
+    <Content Include="manage\dafckbo\editor\skins\default\images\toolbar.start.gif" />
+    <Content Include="manage\dafckbo\fckconfig.js" />
+    <Content Include="manage\dafckbo\fckeditor.asp" />
+    <Content Include="manage\dafckbo\fckeditor.js" />
+    <Content Include="manage\dafckbo\fckstyles.xml" />
+    <Content Include="manage\dafckbo\fcktemplates.xml" />
+    <Content Include="manage\dafckbo\UploadFile\cc200907052042385847.gif" />
+    <Content Include="manage\dafckbo\UploadFile\cc200909162251553166.gif" />
+    <Content Include="manage\dafckbo\UploadFile\cc200909162251557359.gif" />
+    <Content Include="manage\dafckbo\UploadFile\cc200909162253191401.gif" />
+    <Content Include="manage\dafckbo\UploadFile\cc200909170910524569.jpg" />
+    <Content Include="manage\dafckbo\说明.htm" />
+    <Content Include="manage\dafckbo\说明文件.txt" />
+    <Content Include="manage\Default.aspx" />
+    <Content Include="manage\FeedBack.aspx" />
+    <Content Include="manage\FieldRunList.aspx" />
+    <Content Include="manage\HTML\admintitle.html" />
+    <Content Include="manage\HTML\admin_top.html" />
+    <Content Include="manage\HTML\images\!.gif" />
+    <Content Include="manage\HTML\images\ad.gif" />
+    <Content Include="manage\HTML\images\add.gif" />
+    <Content Include="manage\HTML\images\back.gif" />
+    <Content Include="manage\HTML\images\bg.gif" />
+    <Content Include="manage\HTML\images\bigsize.jpg" />
+    <Content Include="manage\HTML\images\bootnbg.jpg" />
+    <Content Include="manage\HTML\images\bullet.gif" />
+    <Content Include="manage\HTML\images\buttom-copy-bg.gif" />
+    <Content Include="manage\HTML\images\buttom-left.gif" />
+    <Content Include="manage\HTML\images\buttom-right.gif" />
+    <Content Include="manage\HTML\images\buttom_bgs.gif" />
+    <Content Include="manage\HTML\images\buttom_left2.gif" />
+    <Content Include="manage\HTML\images\buttom_right2.gif" />
+    <Content Include="manage\HTML\images\card.jpg" />
+    <Content Include="manage\HTML\images\check-out_.gif" />
+    <Content Include="manage\HTML\images\close.gif" />
+    <Content Include="manage\HTML\images\content-bg-line.gif" />
+    <Content Include="manage\HTML\images\content-bg.gif" />
+    <Content Include="manage\HTML\images\database_import_.gif" />
+    <Content Include="manage\HTML\images\DefaultDocs.gif" />
+    <Content Include="manage\HTML\images\defind.gif" />
+    <Content Include="manage\HTML\images\del.jpg" />
+    <Content Include="manage\HTML\images\delete.gif" />
+    <Content Include="manage\HTML\images\delete_6.gif" />
+    <Content Include="manage\HTML\images\edit.gif" />
+    <Content Include="manage\HTML\images\ershou_1.gif" />
+    <Content Include="manage\HTML\images\ershou_2.gif" />
+    <Content Include="manage\HTML\images\format.gif" />
+    <Content Include="manage\HTML\images\fox.css" />
+    <Content Include="manage\HTML\images\g.gif" />
+    <Content Include="manage\HTML\images\gw.gif" />
+    <Content Include="manage\HTML\images\gw2.gif" />
+    <Content Include="manage\HTML\images\icon-demo.gif" />
+    <Content Include="manage\HTML\images\icon-login-seaver.gif" />
+    <Content Include="manage\HTML\images\icon-mail2.gif" />
+    <Content Include="manage\HTML\images\icon-phone.gif" />
+    <Content Include="manage\HTML\images\icon2_004.png" />
+    <Content Include="manage\HTML\images\icon2_089.png" />
+    <Content Include="manage\HTML\images\icon2_090.png" />
+    <Content Include="manage\HTML\images\imagedelete.gif" />
+    <Content Include="manage\HTML\images\imageedit.gif" />
+    <Content Include="manage\HTML\images\image_%28add%296.gif" />
+    <Content Include="manage\HTML\images\image_1.gif" />
+    <Content Include="manage\HTML\images\ipsecurity.gif" />
+    <Content Include="manage\HTML\images\l1b3.gif" />
+    <Content Include="manage\HTML\images\l1b4.gif" />
+    <Content Include="manage\HTML\images\l1b5.gif" />
+    <Content Include="manage\HTML\images\left-bg.gif" />
+    <Content Include="manage\HTML\images\left-top-right.gif" />
+    <Content Include="manage\HTML\images\line2.jpg" />
+    <Content Include="manage\HTML\images\linkspic3.gif" />
+    <Content Include="manage\HTML\images\linkspic6.gif" />
+    <Content Include="manage\HTML\images\lm.gif" />
+    <Content Include="manage\HTML\images\lminfo.gif" />
+    <Content Include="manage\HTML\images\login-buttom-bg.gif" />
+    <Content Include="manage\HTML\images\login-content-bg.gif" />
+    <Content Include="manage\HTML\images\login-top-bg.gif" />
+    <Content Include="manage\HTML\images\login-wel.gif" />
+    <Content Include="manage\HTML\images\login_bg.jpg" />
+    <Content Include="manage\HTML\images\Login_but.gif" />
+    <Content Include="manage\HTML\images\logo.gif" />
+    <Content Include="manage\HTML\images\logo.png" />
+    <Content Include="manage\HTML\images\luck.gif" />
+    <Content Include="manage\HTML\images\mail_leftbg.gif" />
+    <Content Include="manage\HTML\images\mail_rightbg.gif" />
+    <Content Include="manage\HTML\images\menu_bg.gif" />
+    <Content Include="manage\HTML\images\menu_bg1.gif" />
+    <Content Include="manage\HTML\images\menu_bg2.gif" />
+    <Content Include="manage\HTML\images\menu_bgs.gif" />
+    <Content Include="manage\HTML\images\menu_topimg.gif" />
+    <Content Include="manage\HTML\images\menu_topline.gif" />
+    <Content Include="manage\HTML\images\mime.gif" />
+    <Content Include="manage\HTML\images\nav-right-bg.gif" />
+    <Content Include="manage\HTML\images\news-title-bg.gif" />
+    <Content Include="manage\HTML\images\ok.gif" />
+    <Content Include="manage\HTML\images\OK.jpg" />
+    <Content Include="manage\HTML\images\out.gif" />
+    <Content Include="manage\HTML\images\password.gif" />
+    <Content Include="manage\HTML\images\pic1.gif" />
+    <Content Include="manage\HTML\images\pic10.gif" />
+    <Content Include="manage\HTML\images\pic11.gif" />
+    <Content Include="manage\HTML\images\pic12.gif" />
+    <Content Include="manage\HTML\images\pic13.gif" />
+    <Content Include="manage\HTML\images\pic14.gif" />
+    <Content Include="manage\HTML\images\pic15.gif" />
+    <Content Include="manage\HTML\images\pic16.gif" />
+    <Content Include="manage\HTML\images\pic17.gif" />
+    <Content Include="manage\HTML\images\pic18.gif" />
+    <Content Include="manage\HTML\images\pic19.gif" />
+    <Content Include="manage\HTML\images\pic21.gif" />
+    <Content Include="manage\HTML\images\pic22.gif" />
+    <Content Include="manage\HTML\images\pic23.gif" />
+    <Content Include="manage\HTML\images\pic24.gif" />
+    <Content Include="manage\HTML\images\pic25.gif" />
+    <Content Include="manage\HTML\images\pic26.gif" />
+    <Content Include="manage\HTML\images\pic5.gif" />
+    <Content Include="manage\HTML\images\pic6.gif" />
+    <Content Include="manage\HTML\images\pic7.gif" />
+    <Content Include="manage\HTML\images\pic8.gif" />
+    <Content Include="manage\HTML\images\pic9.gif" />
+    <Content Include="manage\HTML\images\Redirects.gif" />
+    <Content Include="manage\HTML\images\report2_%28add%29.gif" />
+    <Content Include="manage\HTML\images\report2_%28delete%29.gif" />
+    <Content Include="manage\HTML\images\right_smbg.jpg" />
+    <Content Include="manage\HTML\images\servicezhgb2312.gif" />
+    <Content Include="manage\HTML\images\set.gif" />
+    <Content Include="manage\HTML\images\set2.gif" />
+    <Content Include="manage\HTML\images\sitebackup.gif" />
+    <Content Include="manage\HTML\images\skin.css" />
+    <Content Include="manage\HTML\images\smallbg.jpg" />
+    <Content Include="manage\HTML\images\st.gif" />
+    <Content Include="manage\HTML\images\st.png" />
+    <Content Include="manage\HTML\images\stop.gif" />
+    <Content Include="manage\HTML\images\str.gif" />
+    <Content Include="manage\HTML\images\Submit_bg.gif" />
+    <Content Include="manage\HTML\images\t2bg1.gif" />
+    <Content Include="manage\HTML\images\t2bg2.gif" />
+    <Content Include="manage\HTML\images\t2bg4.gif" />
+    <Content Include="manage\HTML\images\t2bg5.gif" />
+    <Content Include="manage\HTML\images\title.gif" />
+    <Content Include="manage\HTML\images\tj.jpg" />
+    <Content Include="manage\HTML\images\to.gif" />
+    <Content Include="manage\HTML\images\tool-down-pic.gif" />
+    <Content Include="manage\HTML\images\top-right.gif" />
+    <Content Include="manage\HTML\images\top_bt.jpg" />
+    <Content Include="manage\HTML\images\ts.gif" />
+    <Content Include="manage\HTML\images\user-info.gif" />
+    <Content Include="manage\HTML\images\usercontrol.gif" />
+    <Content Include="manage\HTML\images\vie.gif" />
+    <Content Include="manage\HTML\images\X.gif" />
+    <Content Include="manage\HTML\images\yc.gif" />
+    <Content Include="manage\HTML\images\yx.gif" />
+    <Content Include="manage\HTML\index.html" />
+    <Content Include="manage\HTML\js\moo.fx.js" />
+    <Content Include="manage\HTML\js\moo.fx.pack.js" />
+    <Content Include="manage\HTML\js\prototype.lite.js" />
+    <Content Include="manage\HTML\left.html" />
+    <Content Include="manage\HTML\login.html" />
+    <Content Include="manage\HTML\right.html" />
+    <Content Include="manage\images\!.gif" />
+    <Content Include="manage\images\ad.gif" />
+    <Content Include="manage\images\add.gif" />
+    <Content Include="manage\images\arrow_down.png" />
+    <Content Include="manage\images\arrow_up.png" />
+    <Content Include="manage\images\back.gif" />
+    <Content Include="manage\images\bg.gif" />
+    <Content Include="manage\images\bigsize.jpg" />
+    <Content Include="manage\images\bootnbg.jpg" />
+    <Content Include="manage\images\btn1.jpg" />
+    <Content Include="manage\images\btn2.jpg" />
+    <Content Include="manage\images\btn3.jpg" />
+    <Content Include="manage\images\bullet.gif" />
+    <Content Include="manage\images\buttom-copy-bg.gif" />
+    <Content Include="manage\images\buttom-left.gif" />
+    <Content Include="manage\images\buttom-right.gif" />
+    <Content Include="manage\images\buttom_bgs.gif" />
+    <Content Include="manage\images\buttom_left2.gif" />
+    <Content Include="manage\images\buttom_right2.gif" />
+    <Content Include="manage\images\card.jpg" />
+    <Content Include="manage\images\cc1.gif" />
+    <Content Include="manage\images\check-out_.gif" />
+    <Content Include="manage\images\close.gif" />
+    <Content Include="manage\images\content-bg-line.gif" />
+    <Content Include="manage\images\content-bg.gif" />
+    <Content Include="manage\images\database_import_.gif" />
+    <Content Include="manage\images\DefaultDocs.gif" />
+    <Content Include="manage\images\defind.gif" />
+    <Content Include="manage\images\del.jpg" />
+    <Content Include="manage\images\delete.gif" />
+    <Content Include="manage\images\delete_6.gif" />
+    <Content Include="manage\images\edit.gif" />
+    <Content Include="manage\images\ershou_1.gif" />
+    <Content Include="manage\images\ershou_2.gif" />
+    <Content Include="manage\images\format.gif" />
+    <Content Include="manage\images\g.gif" />
+    <Content Include="manage\images\gw.gif" />
+    <Content Include="manage\images\gw2.gif" />
+    <Content Include="manage\images\icon-demo.gif" />
+    <Content Include="manage\images\icon-login-seaver.gif" />
+    <Content Include="manage\images\icon-mail2.gif" />
+    <Content Include="manage\images\icon-phone.gif" />
+    <Content Include="manage\images\icon2_004.png" />
+    <Content Include="manage\images\icon2_089.png" />
+    <Content Include="manage\images\icon2_090.png" />
+    <Content Include="manage\images\imagedelete.gif" />
+    <Content Include="manage\images\imageedit.gif" />
+    <Content Include="manage\images\image_%28add%296.gif" />
+    <Content Include="manage\images\image_1.gif" />
+    <Content Include="manage\images\ipsecurity.gif" />
+    <Content Include="manage\images\l1b3.gif" />
+    <Content Include="manage\images\l1b4.gif" />
+    <Content Include="manage\images\l1b5.gif" />
+    <Content Include="manage\images\left-bg.gif" />
+    <Content Include="manage\images\left-top-right.gif" />
+    <Content Include="manage\images\line2.jpg" />
+    <Content Include="manage\images\linkspic3.gif" />
+    <Content Include="manage\images\linkspic6.gif" />
+    <Content Include="manage\images\lm.gif" />
+    <Content Include="manage\images\lminfo.gif" />
+    <Content Include="manage\images\login-buttom-bg.gif" />
+    <Content Include="manage\images\login-content-bg.gif" />
+    <Content Include="manage\images\login-top-bg.gif" />
+    <Content Include="manage\images\login-wel.gif" />
+    <Content Include="manage\images\login_bg.jpg" />
+    <Content Include="manage\images\Login_but.gif" />
+    <Content Include="manage\images\logo.gif" />
+    <Content Include="manage\images\logo.png" />
+    <Content Include="manage\images\luck.gif" />
+    <Content Include="manage\images\mail_leftbg.gif" />
+    <Content Include="manage\images\mail_rightbg.gif" />
+    <Content Include="manage\images\menu_bg.gif" />
+    <Content Include="manage\images\menu_bg1.gif" />
+    <Content Include="manage\images\menu_bg2.gif" />
+    <Content Include="manage\images\menu_bgs.gif" />
+    <Content Include="manage\images\menu_topimg.gif" />
+    <Content Include="manage\images\menu_topline.gif" />
+    <Content Include="manage\images\mime.gif" />
+    <Content Include="manage\images\nav-right-bg.gif" />
+    <Content Include="manage\images\news-title-bg.gif" />
+    <Content Include="manage\images\nopic.jpg" />
+    <Content Include="manage\images\ok.gif" />
+    <Content Include="manage\images\OK.jpg" />
+    <Content Include="manage\images\out.gif" />
+    <Content Include="manage\images\password.gif" />
+    <Content Include="manage\images\pic1.gif" />
+    <Content Include="manage\images\pic10.gif" />
+    <Content Include="manage\images\pic11.gif" />
+    <Content Include="manage\images\pic12.gif" />
+    <Content Include="manage\images\pic13.gif" />
+    <Content Include="manage\images\pic14.gif" />
+    <Content Include="manage\images\pic15.gif" />
+    <Content Include="manage\images\pic16.gif" />
+    <Content Include="manage\images\pic17.gif" />
+    <Content Include="manage\images\pic18.gif" />
+    <Content Include="manage\images\pic19.gif" />
+    <Content Include="manage\images\pic21.gif" />
+    <Content Include="manage\images\pic22.gif" />
+    <Content Include="manage\images\pic23.gif" />
+    <Content Include="manage\images\pic24.gif" />
+    <Content Include="manage\images\pic25.gif" />
+    <Content Include="manage\images\pic26.gif" />
+    <Content Include="manage\images\pic5.gif" />
+    <Content Include="manage\images\pic6.gif" />
+    <Content Include="manage\images\pic7.gif" />
+    <Content Include="manage\images\pic8.gif" />
+    <Content Include="manage\images\pic9.gif" />
+    <Content Include="manage\images\Redirects.gif" />
+    <Content Include="manage\images\report2_%28add%29.gif" />
+    <Content Include="manage\images\report2_%28delete%29.gif" />
+    <Content Include="manage\images\right_smbg.jpg" />
+    <Content Include="manage\images\servicezhgb2312.gif" />
+    <Content Include="manage\images\set.gif" />
+    <Content Include="manage\images\set2.gif" />
+    <Content Include="manage\images\sitebackup.gif" />
+    <Content Include="manage\images\smallbg.jpg" />
+    <Content Include="manage\images\st.gif" />
+    <Content Include="manage\images\st.png" />
+    <Content Include="manage\images\stop.gif" />
+    <Content Include="manage\images\str.gif" />
+    <Content Include="manage\images\Submit_bg.gif" />
+    <Content Include="manage\images\t2bg1.gif" />
+    <Content Include="manage\images\t2bg2.gif" />
+    <Content Include="manage\images\t2bg4.gif" />
+    <Content Include="manage\images\t2bg5.gif" />
+    <Content Include="manage\images\title.gif" />
+    <Content Include="manage\images\tj.jpg" />
+    <Content Include="manage\images\to.gif" />
+    <Content Include="manage\images\tool-down-pic.gif" />
+    <Content Include="manage\images\top-right.gif" />
+    <Content Include="manage\images\top_bt.jpg" />
+    <Content Include="manage\images\ts.gif" />
+    <Content Include="manage\images\user-info.gif" />
+    <Content Include="manage\images\usercontrol.gif" />
+    <Content Include="manage\images\vie.gif" />
+    <Content Include="manage\images\X.gif" />
+    <Content Include="manage\images\yc.gif" />
+    <Content Include="manage\images\yx.gif" />
+    <Content Include="manage\Jobs.aspx" />
+    <Content Include="manage\js\jquery-1.5.1.min.js" />
+    <Content Include="manage\js\jquery.comjs.js" />
+    <Content Include="manage\js\jquery.cookie.js" />
+    <Content Include="manage\js\js.js" />
+    <Content Include="manage\js\moo.fx.js" />
+    <Content Include="manage\js\moo.fx.pack.js" />
+    <Content Include="manage\js\My97DatePicker\calendar.js" />
+    <Content Include="manage\js\My97DatePicker\lang\en.js" />
+    <Content Include="manage\js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="manage\js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="manage\js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="manage\js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="manage\js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="manage\js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="manage\js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="manage\js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="manage\js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="manage\js\My97DatePicker\WdatePicker.js" />
+    <Content Include="manage\js\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="manage\js\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="manage\js\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="manage\js\My97DatePicker\开发包\readme.txt" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="manage\js\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="manage\js\popWin.js" />
+    <Content Include="manage\js\prototype.lite.js" />
+    <Content Include="manage\js\webcom.js" />
+    <Content Include="manage\Left.aspx" />
+    <Content Include="manage\left.html" />
+    <Content Include="manage\Links.aspx" />
+    <Content Include="manage\Logout.aspx" />
+    <Content Include="manage\Main.aspx" />
+    <Content Include="manage\ManageList.aspx" />
+    <Content Include="manage\MorePic.aspx" />
+    <Content Include="manage\news.aspx" />
+    <Content Include="manage\newstype.aspx" />
+    <Content Include="manage\Products.aspx" />
+    <Content Include="manage\ProductsInfo.aspx" />
+    <Content Include="manage\producttype.aspx" />
+    <Content Include="manage\resetpassword.aspx" />
+    <Content Include="manage\SetUserPassword.aspx" />
+    <Content Include="manage\SitePurview.aspx" />
+    <Content Include="manage\SystemFunction.aspx" />
+    <Content Include="manage\Top.aspx" />
+    <Content Include="manage\ubb\blankpage.htm" />
+    <Content Include="manage\ubb\ColorSelect.htm" />
+    <Content Include="manage\ubb\colorSelect.js" />
+    <Content Include="manage\ubb\editfunc.js" />
+    <Content Include="manage\ubb\editorArea.css" />
+    <Content Include="manage\ubb\FontFaceSelect.htm" />
+    <Content Include="manage\ubb\FontSizeSelect.htm" />
+    <Content Include="manage\ubb\images\1.gif" />
+    <Content Include="manage\ubb\images\10.gif" />
+    <Content Include="manage\ubb\images\11.gif" />
+    <Content Include="manage\ubb\images\12.gif" />
+    <Content Include="manage\ubb\images\13.gif" />
+    <Content Include="manage\ubb\images\14.gif" />
+    <Content Include="manage\ubb\images\15.gif" />
+    <Content Include="manage\ubb\images\16.gif" />
+    <Content Include="manage\ubb\images\17.gif" />
+    <Content Include="manage\ubb\images\18.gif" />
+    <Content Include="manage\ubb\images\19.gif" />
+    <Content Include="manage\ubb\images\2.gif" />
+    <Content Include="manage\ubb\images\20.gif" />
+    <Content Include="manage\ubb\images\3.gif" />
+    <Content Include="manage\ubb\images\4.gif" />
+    <Content Include="manage\ubb\images\5.gif" />
+    <Content Include="manage\ubb\images\6.gif" />
+    <Content Include="manage\ubb\images\7.gif" />
+    <Content Include="manage\ubb\images\8.gif" />
+    <Content Include="manage\ubb\images\9.gif" />
+    <Content Include="manage\ubb\images\bg.gif" />
+    <Content Include="manage\ubb\images\line.gif" />
+    <Content Include="manage\ubb\img\49.gif" />
+    <Content Include="manage\ubb\img\50.gif" />
+    <Content Include="manage\ubb\img\51.gif" />
+    <Content Include="manage\ubb\img\52.gif" />
+    <Content Include="manage\ubb\img\53.gif" />
+    <Content Include="manage\ubb\img\54.gif" />
+    <Content Include="manage\ubb\img\55.gif" />
+    <Content Include="manage\ubb\img\56.gif" />
+    <Content Include="manage\ubb\img\57.gif" />
+    <Content Include="manage\ubb\img\58.gif" />
+    <Content Include="manage\ubb\img\59.gif" />
+    <Content Include="manage\ubb\img\60.gif" />
+    <Content Include="manage\ubb\img\61.gif" />
+    <Content Include="manage\ubb\img\62.gif" />
+    <Content Include="manage\ubb\img\63.gif" />
+    <Content Include="manage\ubb\img\64.gif" />
+    <Content Include="manage\ubb\img\65.gif" />
+    <Content Include="manage\ubb\img\66.gif" />
+    <Content Include="manage\ubb\img\67.gif" />
+    <Content Include="manage\ubb\img\68.gif" />
+    <Content Include="manage\ubb\img\69.gif" />
+    <Content Include="manage\ubb\img\70.gif" />
+    <Content Include="manage\ubb\img\71.gif" />
+    <Content Include="manage\ubb\img\72.gif" />
+    <Content Include="manage\ubb\img\73.gif" />
+    <Content Include="manage\ubb\img\74.gif" />
+    <Content Include="manage\ubb\img\75.gif" />
+    <Content Include="manage\ubb\img\76.gif" />
+    <Content Include="manage\ubb\img\77.gif" />
+    <Content Include="manage\ubb\img\78.gif" />
+    <Content Include="manage\ubb\img\79.gif" />
+    <Content Include="manage\ubb\img\80.gif" />
+    <Content Include="manage\ubb\img\81.gif" />
+    <Content Include="manage\ubb\img\82.gif" />
+    <Content Include="manage\ubb\img\83.gif" />
+    <Content Include="manage\ubb\img\84.gif" />
+    <Content Include="manage\ubb\img\smile01.gif" />
+    <Content Include="manage\ubb\img\smile02.gif" />
+    <Content Include="manage\ubb\img\smile03.gif" />
+    <Content Include="manage\ubb\img\smile04.gif" />
+    <Content Include="manage\ubb\img\smile05.gif" />
+    <Content Include="manage\ubb\img\smile06.gif" />
+    <Content Include="manage\ubb\img\smile07.gif" />
+    <Content Include="manage\ubb\img\smile08.gif" />
+    <Content Include="manage\ubb\img\smile09.gif" />
+    <Content Include="manage\ubb\img\smile10.gif" />
+    <Content Include="manage\ubb\img\smile11.gif" />
+    <Content Include="manage\ubb\img\smile12.gif" />
+    <Content Include="manage\ubb\img\smile13.gif" />
+    <Content Include="manage\ubb\img\smile14.gif" />
+    <Content Include="manage\ubb\img\smile15.gif" />
+    <Content Include="manage\ubb\img\smile16.gif" />
+    <Content Include="manage\ubb\img\smile17.gif" />
+    <Content Include="manage\ubb\img\smile18.gif" />
+    <Content Include="manage\ubb\img\smile19.gif" />
+    <Content Include="manage\ubb\img\smile20.gif" />
+    <Content Include="manage\ubb\img\smile21.gif" />
+    <Content Include="manage\ubb\img\smile22.gif" />
+    <Content Include="manage\ubb\img\smile23.gif" />
+    <Content Include="manage\ubb\img\smile24.gif" />
+    <Content Include="manage\ubb\img\smile25.gif" />
+    <Content Include="manage\ubb\img\smile26.gif" />
+    <Content Include="manage\ubb\img\smile27.gif" />
+    <Content Include="manage\ubb\img\smile28.gif" />
+    <Content Include="manage\ubb\img\smile29.gif" />
+    <Content Include="manage\ubb\img\smile30.gif" />
+    <Content Include="manage\ubb\img\smile31.gif" />
+    <Content Include="manage\ubb\img\smile32.gif" />
+    <Content Include="manage\ubb\img\smile33.gif" />
+    <Content Include="manage\ubb\img\smile34.gif" />
+    <Content Include="manage\ubb\img\smile35.gif" />
+    <Content Include="manage\ubb\img\smile36.gif" />
+    <Content Include="manage\ubb\img\smile37.gif" />
+    <Content Include="manage\ubb\img\smile38.gif" />
+    <Content Include="manage\ubb\img\smile39.gif" />
+    <Content Include="manage\ubb\img\smile40.gif" />
+    <Content Include="manage\ubb\img\smile41.gif" />
+    <Content Include="manage\ubb\img\smile42.gif" />
+    <Content Include="manage\ubb\img\smile43.gif" />
+    <Content Include="manage\ubb\img\smile44.gif" />
+    <Content Include="manage\ubb\img\smile45.gif" />
+    <Content Include="manage\ubb\img\smile46.gif" />
+    <Content Include="manage\ubb\img\smile47.gif" />
+    <Content Include="manage\ubb\img\smile48.gif" />
+    <Content Include="manage\ubb\index.html" />
+    <Content Include="manage\ubb\portraitSelect.htm" />
+    <Content Include="manage\ubb\portraitSelect.js" />
+    <Content Include="manage\ubb\编辑器说明.txt" />
+    <Content Include="manage\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="manage\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="manage\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="manage\ueditor\dialogs\attachment\callbacks.js" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="manage\ueditor\dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="manage\ueditor\dialogs\background\background.css" />
+    <Content Include="manage\ueditor\dialogs\background\background.html" />
+    <Content Include="manage\ueditor\dialogs\background\background.js" />
+    <Content Include="manage\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="manage\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="manage\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="manage\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="manage\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="manage\ueditor\dialogs\help\help.css" />
+    <Content Include="manage\ueditor\dialogs\help\help.html" />
+    <Content Include="manage\ueditor\dialogs\help\help.js" />
+    <Content Include="manage\ueditor\dialogs\highlightcode\highlightcode.html" />
+    <Content Include="manage\ueditor\dialogs\image\image.css" />
+    <Content Include="manage\ueditor\dialogs\image\image.html" />
+    <Content Include="manage\ueditor\dialogs\image\image.js" />
+    <Content Include="manage\ueditor\dialogs\image\images\center_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\image\images\left_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\image\images\none_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\image\images\right_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\image\imageUploader.swf" />
+    <Content Include="manage\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="manage\ueditor\dialogs\internal.js" />
+    <Content Include="manage\ueditor\dialogs\link\link.html" />
+    <Content Include="manage\ueditor\dialogs\map\map.html" />
+    <Content Include="manage\ueditor\dialogs\music\music.css" />
+    <Content Include="manage\ueditor\dialogs\music\music.html" />
+    <Content Include="manage\ueditor\dialogs\music\music.js" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="manage\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="manage\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="manage\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="manage\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="manage\ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="manage\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="manage\ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="manage\ueditor\dialogs\table\dragicon.png" />
+    <Content Include="manage\ueditor\dialogs\table\edittable.css" />
+    <Content Include="manage\ueditor\dialogs\table\edittable.html" />
+    <Content Include="manage\ueditor\dialogs\table\edittable.js" />
+    <Content Include="manage\ueditor\dialogs\table\edittd.html" />
+    <Content Include="manage\ueditor\dialogs\table\edittip.html" />
+    <Content Include="manage\ueditor\dialogs\tangram.js" />
+    <Content Include="manage\ueditor\dialogs\template\config.js" />
+    <Content Include="manage\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="manage\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="manage\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="manage\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="manage\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="manage\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="manage\ueditor\dialogs\template\template.css" />
+    <Content Include="manage\ueditor\dialogs\template\template.html" />
+    <Content Include="manage\ueditor\dialogs\template\template.js" />
+    <Content Include="manage\ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="manage\ueditor\dialogs\video\video.css" />
+    <Content Include="manage\ueditor\dialogs\video\video.html" />
+    <Content Include="manage\ueditor\dialogs\video\video.js" />
+    <Content Include="manage\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="manage\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="manage\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="manage\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="manage\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="manage\ueditor\editor_all.js" />
+    <Content Include="manage\ueditor\editor_all_min.js" />
+    <Content Include="manage\ueditor\editor_config.js" />
+    <Content Include="manage\ueditor\index.html" />
+    <Content Include="manage\ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="manage\ueditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="manage\ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="manage\ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="manage\ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="manage\ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="manage\ueditor\themes\default\css\ueditor.css" />
+    <Content Include="manage\ueditor\themes\default\dialogbase.css" />
+    <Content Include="manage\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="manage\ueditor\themes\default\images\arrow.png" />
+    <Content Include="manage\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="manage\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="manage\ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="manage\ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="manage\ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="manage\ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="manage\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="manage\ueditor\themes\default\images\filescan.png" />
+    <Content Include="manage\ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="manage\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="manage\ueditor\themes\default\images\icons.gif" />
+    <Content Include="manage\ueditor\themes\default\images\icons.png" />
+    <Content Include="manage\ueditor\themes\default\images\lock.gif" />
+    <Content Include="manage\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="manage\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="manage\ueditor\themes\default\images\scale.png" />
+    <Content Include="manage\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="manage\ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="manage\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="manage\ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="manage\ueditor\themes\default\images\upload.png" />
+    <Content Include="manage\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="manage\ueditor\themes\default\images\word.gif" />
+    <Content Include="manage\ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="manage\ueditor\themes\iframe.css" />
+    <Content Include="manage\ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="manage\ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="manage\ueditor\third-party\snapscreen\setup.exe" />
+    <Content Include="manage\ueditor\third-party\snapscreen\Snapsie.dll" />
+    <Content Include="manage\ueditor\third-party\snapscreen\test.html" />
+    <Content Include="manage\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="manage\ueditor\third-party\snapscreen\user_manual.txt" />
+    <Content Include="manage\ueditor\third-party\swfupload\fileprogress.js" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload.js" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload.queue.js" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload.speed.js" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload.swf" />
+    <Content Include="manage\ueditor\third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="manage\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="manage\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="manage\ueditor\uparse.js" />
+    <Content Include="manage\UploadFile\cc201206111601433915.jpg" />
+    <Content Include="manage\UploadFile\cc201206130910173568.png" />
+    <Content Include="manage\UploadFile\cc201206130927222939.png" />
+    <Content Include="manage\UploadFile\cc201206130939346432.jpg" />
+    <Content Include="manage\UploadFile\cc201206130942587841.jpg" />
+    <Content Include="manage\VerifyCode.aspx" />
+    <Content Include="manage\webconfig.aspx" />
+    <Content Include="manage\Member.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\lang.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\lang.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\lang.zh-CN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\AjaxWebService.aspx.cs">
+      <DependentUpon>AjaxWebService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Btn.aspx.cs">
+      <DependentUpon>Btn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Btn.aspx.designer.cs">
+      <DependentUpon>Btn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\ClassManage.aspx.cs">
+      <DependentUpon>ClassManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\ClassManage.aspx.designer.cs">
+      <DependentUpon>ClassManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\CompanyInfo.aspx.cs">
+      <DependentUpon>CompanyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\CompanyInfo.aspx.designer.cs">
+      <DependentUpon>CompanyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\control\MenuList.ascx.cs">
+      <DependentUpon>MenuList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\control\MenuList.ascx.designer.cs">
+      <DependentUpon>MenuList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\FieldRunList.aspx.cs">
+      <DependentUpon>FieldRunList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\FieldRunList.aspx.designer.cs">
+      <DependentUpon>FieldRunList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Jobs.aspx.cs">
+      <DependentUpon>Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Jobs.aspx.designer.cs">
+      <DependentUpon>Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\ManageList.aspx.cs">
+      <DependentUpon>ManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\ManageList.aspx.designer.cs">
+      <DependentUpon>ManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\MorePic.aspx.cs">
+      <DependentUpon>MorePic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\MorePic.aspx.designer.cs">
+      <DependentUpon>MorePic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\newstype.aspx.cs">
+      <DependentUpon>newstype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\newstype.aspx.designer.cs">
+      <DependentUpon>newstype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\ProductsInfo.aspx.cs">
+      <DependentUpon>ProductsInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\ProductsInfo.aspx.designer.cs">
+      <DependentUpon>ProductsInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\producttype.aspx.cs">
+      <DependentUpon>producttype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\producttype.aspx.designer.cs">
+      <DependentUpon>producttype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\resetpassword.aspx.cs">
+      <DependentUpon>resetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\resetpassword.aspx.designer.cs">
+      <DependentUpon>resetpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\SetUserPassword.aspx.cs">
+      <DependentUpon>SetUserPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\SetUserPassword.aspx.designer.cs">
+      <DependentUpon>SetUserPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\SitePurview.aspx.cs">
+      <DependentUpon>SitePurview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\SitePurview.aspx.designer.cs">
+      <DependentUpon>SitePurview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\SystemFunction.aspx.cs">
+      <DependentUpon>SystemFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\SystemFunction.aspx.designer.cs">
+      <DependentUpon>SystemFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\ueditor\net\Uploader.cs" />
+    <Compile Include="manage\VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\webconfig.aspx.cs">
+      <DependentUpon>webconfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\webconfig.aspx.designer.cs">
+      <DependentUpon>webconfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\lang.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>lang.en.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\lang.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>lang.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\lang.zh-CN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>lang.zh-CN.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <None Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <None Include="manage\dafckbo\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <Content Include="manage\ueditor\net\fileUp.ashx" />
+    <Content Include="manage\ueditor\net\getContent.ashx" />
+    <Content Include="manage\ueditor\net\getMovie.ashx" />
+    <Content Include="manage\ueditor\net\getRemoteImage.ashx" />
+    <Content Include="manage\ueditor\net\imageManager.ashx" />
+    <Content Include="manage\ueditor\net\imageUp.ashx" />
+    <Content Include="manage\ueditor\net\scrawlUp.ashx" />
+    <Content Include="manage\ueditor\net\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="images\" />
+    <Folder Include="manage\dafckbo\UploadFiles\" />
+    <Folder Include="manage\dafckbo\UploadFile\image\" />
+    <Folder Include="manage\UploadFile\image\" />
+    <Folder Include="UploadFile\ePic\" />
+    <Folder Include="UploadFile\OldPic\" />
+    <Folder Include="UploadFile\Pic\" />
+    <Folder Include="UploadFile\Spic\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

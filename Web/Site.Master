@@ -1,0 +1,347 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Song.Web.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="创业，资本，风险投资，VC，IPO，PE，私募，风险投资公司，私募股权，上市，融资，天使投资，创业故事,创业项目" />
+    <meta name="description" content="创业邦致力于成为中国创业者的信息平台和服务平台，帮助中国创业者实现创业梦想。创业邦为创业者和风险投资人提供各种创业类最新资讯和实用知识手册，打造创业者和投资人的社交平台。" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+    <link href="css/dialog.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/jquery-placeholder.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/dialog.js" type="text/javascript"></script>
+    <script src="js/template.js" type="text/javascript"></script>
+    <script src="js/arttemplate.js" type="text/javascript"></script>
+    <script src="js/Validform.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var forefather = 0;
+        var jiathis_config = { data_track_clickback: true };
+        scrollTop();
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="all_top">
+        <div class="top">
+            <!--logo-->
+            <div class="more">
+                <a href="/" class="logo"></a>
+                <!--创业邦-->
+                <div class="header headerv2 clearfix">
+                    <div class="top_left">
+                        <a class="top_lefta1" href="/" target="_blank">会议活动</a><a class="top_lefta2" href="/">订阅杂志</a><a
+                            class="top_lefta3" href="/" target="_blank">孵化计划</a></div>
+                    <!--header_login_top-->
+                    <!--header_login_top-->
+                    <div class="top_right">
+                        <div class="top_right_right">
+                            <form action="index.aspx" id="search-myform" name="search-myform" method="get">
+                            <input type="hidden" name="m" value="search">
+                            <input type="hidden" name="c" value="index">
+                            <input type="hidden" name="a" value="init">
+                            <input type="hidden" name="typeid" value="" id="typeid">
+                            <input type="hidden" name="siteid" value="1" id="siteid">
+                            <input type="text" name="wd" value="创业" class="input_txt">
+                            <input type="submit" value="搜索" class="input_search">
+                            </form>
+                        </div>
+                        <div class="top_right_left">
+                            <div id="logout_status" style="display: none;">
+                                <div id="pushmenu">
+                                    <a class="top_lefta2 username" href="javascript:;"><em></em></a>
+                                    <ul>
+                                        <li><a href="/">我的评论</a><i></i></li>
+                                        <li><a href="/">我的收藏</a><i></i></li>
+                                        <li><a href="/">我的投稿</a><i></i></li>
+                                        <li><a href="/">我的资料</a><i></i></li>
+                                        <li><a href="/">退出</a></li>
+                                    </ul>
+                                </div>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        var ul = $('#pushmenu ul')[0];
+                                        $('#pushmenu .username').hover(function () {
+                                            $(this).siblings('ul').addClass('hover');
+                                        }, function (e) {
+                                            var event = e.relatedTarget ? e.relatedTarget : e.toElement;
+                                            if (event.parentNode == ul || event.parentNode.parentNode == ul) {
+                                                return;
+                                            } else {
+                                                $(this).siblings('ul').removeClass('hover');
+                                            }
+                                        });
+
+                                        $('#pushmenu ul').hover(function () {
+                                            this.className = 'hover';
+                                        }, function () {
+                                            this.className = "";
+                                        })
+
+                                    })
+                                </script>
+                            </div>
+                            <div id="login_status" style="">
+                                <a href="javascript:;" onclick="member.login()" class="top_lefta1">[登录]</a><a href="javascript:;"
+                                    onclick="member.register()" class="top_lefta4">[注册]</a>
+                            </div>
+                            <script type="text/javascript">                                member.status();</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--nav-->
+            <div class="nav" id="nav">
+                <div class="home">
+                    <a href="/" class="forefather home_er" navid="0"></a><em class="home_em"></em>
+                </div>
+                <ul class="nav_ul" id="navs">
+                    <li class="nav_ul_li forefather" navid="3" style="width: 80px;"><a href="/" class="nav_a">
+                        特色服务</a>
+                        <div class="nav_div">
+                            <div class="side">
+                                <table class="side_table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=202" class="a_color">一元理发</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=203" class="a_color">餐厅预订</a></div>
+                                                <%--<div class="side_div1">
+                                                    <a href="http://www.cyzone.cn/category/20/" class="a_color">快速摄像</a></div>--%>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=204" class="a_color">中华技艺技能大师</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=205" class="a_color">“菜篮子”</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=206" class="a_color">家政服务</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=207" class="a_color">干洗服务</a></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_li"></li>
+                    <li class="nav_ul_li forefather" navid="704" style="width: 80px;"><a href="/" class="nav_a">
+                        协会组织</a>
+                        <div class="nav_div">
+                            <div class="side">
+                                <table class="side_table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=209" class="a_color">摄影协会</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=210" class="a_color">美容美发协会</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=211" class="a_color">餐饮协会</a></div>
+                                            </td>
+                                            <td>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=212" class="a_color">电商协会</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=213" class="a_color">沐浴协会</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=214" class="a_color">家政协会</a></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_li"></li>
+                    <li class="nav_ul_li forefather" navid="4" style="width: 80px;"><a href="javascript:void(0);"
+                        class="nav_a">行业活动</a>
+                        <div class="nav_div">
+                            <div class="side">
+                                <table class="side_table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=216" class="a_color">摄影比赛</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=217" class="a_color">劳动楷模</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=218" class="a_color">中华技艺技能大师授课</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=219" class="a_color">摄影培训考证</a></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_li"></li>
+                    <li class="nav_ul_li forefather" navid="2" style="width: 90px;"><a href="javascript:void(0);"
+                        class="nav_a">论坛·高峰</a>
+                        <div class="nav_div">
+                            <div class="side">
+                                <table class="side_table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=222" class="a_color">摄影博览会</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=223" class="a_color">美业博览会</a></div>
+                                                <div class="side_div1">
+                                                    <a href="/category.aspx?id=224" class="a_color">餐饮博览会</a></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <%--<li class="nav_li"></li>
+                    <li style="width: 50px; padding-right: 5px;"><a href="http://xiangmu.cyzone.cn/"
+                        target="_blank">项目库</a></li>
+                    <li class="nav_li"></li>
+                    <li style="width: 54px;"><a href="http://www.cyzone.cn/contribute" style="color: #399ee6;">
+                        投稿</a></li>--%>
+                </ul>
+            </div>
+            <!--各种top定位-->
+            <script type="text/javascript">                navshover();</script>
+            <!--header_nav-->
+        </div>
+    </div>
+    <div class="all_content">
+        <div class="content" id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="foot_all">
+        <div class="foot">
+            <div class="submap clearfix">
+                <ul>
+                    <li>
+                        <p>
+                            协会组织</p>
+                        <ul>
+                            <li><a href="/category.aspx?id=209" target="_blank">摄影协会</a> <a href="/category.aspx?id=210"
+                                target="_blank">美容美发协会</a> <a href="/category.aspx?id=211" target="_blank">餐饮协会</a>
+                                <a href="/category.aspx?id=212" target="_blank">电商协会</a> <a href="/category.aspx?id=213"
+                                    target="_blank">沐浴协会</a> <a href="/category.aspx?id=214" target="_blank">家政协会</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            行业活动</p>
+                        <ul>
+                            <li><a href="/category.aspx?id=216" target="_blank">摄影比赛</a> <a href="/category.aspx?id=217"
+                                target="_blank">劳动楷模</a> <a href="/category.aspx?id=218" target="_blank">中华技艺技能大师授课</a>
+                                <a href="/category.aspx?id=219" target="_blank">摄影培训考证</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            特色服务</p>
+                        <ul>
+                            <li><a href="/category.aspx?id=202" target="_blank">一元理发</a> <a href="/category.aspx?id=203"
+                                target="_blank">餐厅预订</a> </li>
+                            <%--<li><span>快速摄像</span>
+                                <div>
+                                    <a href="/" target="_blank">婚庆</a> <a href="/" target="_blank">影楼</a>
+                                </div>
+                            </li>--%>
+                            <li><a href="/category.aspx?id=204" target="_blank">中华技艺技能大师</a> <a href="/category.aspx?id=205"
+                                target="_blank">“菜篮子”</a> <a href="/category.aspx?id=206" target="_blank">家政服务</a>
+                                <a href="/category.aspx?id=207" target="_blank">干洗服务</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            论坛·高峰</p>
+                        <ul>
+                            <li><a href="/category.aspx?id=222" target="_blank">摄影博览会</a> <a href="/category.aspx?id=223"
+                                target="_blank">美业博览会</a> <a href="/category.aspx?id=224" target="_blank">餐饮博览会</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li style="width: 24%;">
+                        <p>
+                            微信公众号：</p>
+                        <div class="cyb_top clearfix">
+                            <%--<a href="http://magazine.cyzone.cn/m77.html" class="cyb_left" target="_blank">
+                                <img src="http://img5.cyzone.cn/uploadfile/2014/0603/thumb_102_130_20140603104235817.jpg"
+                                    alt="" width="102" height="130"></a>
+                            <div class="cyb_right">
+                                2014年 第<span class="cyb_span">6</span>期 <a href="http://magazine.cyzone.cn/subscription.html"
+                                    class="cyb_a1" target="_blank">杂志订阅</a> <a href="http://magazine.cyzone.cn/" class="cyb_a2"
+                                        target="_blank">往期杂志</a>
+                            </div>--%>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $('.submap span').each(function (i, a) {
+                        if ($(a).siblings('div')) {
+                            var div = $(a).siblings('div')[0];
+                            if ($(a).hasClass('act')) {
+                                div.className = 'o';
+                            } else if (!$(a).hasClass('act') && $(a).siblings('div').hasClass('o')) {
+                                div.className = "";
+                            }
+                        }
+                        $(a).click(function () {
+                            $(a).toggleClass('act').siblings('div').toggleClass('o');
+                        });
+                    });
+                });
+            </script>
+            <!-- index_bottom_service -->
+            <div class="ser_line">
+                <div>
+                </div>
+            </div>
+            <!--友情链接-->
+            <div class="link_1" style="text-align: center;">
+                <div class="frendlink">
+                    <h5>
+                        友情链接</h5>
+                    <p align="center">
+                        <a href="http://www.henhaoji.com.cn" target="_blank">厦门网站建设</a></p>
+                </div>
+            </div>
+            <!-- index_bottom_friendlink -->
+            <div class="footer_box">
+                <div class="foot_bar1">
+                    <a href="http://www.entrepreneur.com" target="_blank">
+                        <img alt="Entrepreneur" height="31" src="http://tpl2.cyzone.cn/templates/cyzonev1/css/images/foot_logo.jpg"
+                            width="246" /></a></div>
+                <div class="foot_bar2">
+                    <a class="footlink" href="/" target="_blank">关于我们</a> | <a class="footlink" rel="nofollow"
+                        href="/" target="_blank">广告与服务</a> | <a class="footlink" href="/" target="_blank">友情合作</a>
+                    | <a class="footlink" href="/" rel="nofollow" target="_blank">版权声明</a> | <a class="footlink"
+                        href="/" rel="nofollow" target="_blank">意见反馈</a></div>
+                <div class="foot_bar3">
+                    Copyright 2007-2014 cyzone.cn All rights reserved <a class="footlink" href="http://www.bca.gov.cn/"
+                        rel="nofollow">京ICP证XXX号</a></div>
+            </div>
+            <!-- index_bottom_copyright -->
+        </div>
+    </div>
+    </form>
+</body>
+</html>

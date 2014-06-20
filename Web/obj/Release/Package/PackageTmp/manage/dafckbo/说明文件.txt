@@ -1,0 +1,51 @@
+远程图片自动保存插件
+
+总算是完成功能了吧，不过离我当初预想的还有些差距，差强人意吧。
+使用前需要设置下远程图片保存目录。
+editor\plugins\remoteupload\save.asp
+修改内容
+ = "/Upload/"
+默认为根目录下的Upload目录，修改注意要以"/"结尾
+
+本压缩包是我整理精简的FckEditor ASP版，版本为2.5 Beta Build 16848
+
+可以直接使用，或者自己单独安装“远程图片自动保存插件”到您自己的Fck里。
+安装方法
+1。拷贝/editor/plugins/remoteupload目录到您的FCK相应目录
+2。修改您的fckconfig.js文件，查找 FCKConfig.PluginsPath = FCKConfig.BasePath + 'plugins/' ;
+  添加一下一行
+  FCKConfig.Plugins.Add( 'remoteupload', 'en,zh-cn' ) ;
+3。调整您的工具栏设置，增加远程保存按钮，以下是我的
+FCKConfig.ToolbarSets["Default"] = [
+	['Source','DocProps','-','Save','NewPage','Preview','-','Templates'],
+	['Cut','Copy','Paste','PasteText','PasteWord','-','Print','SpellCheck'],
+	['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+	['Form','Checkbox','Radio','TextField','Textarea','Select','Button','ImageButton','HiddenField'],
+	'/',
+	['Bold','Italic','Underline','StrikeThrough','-','Subscript','Superscript'],
+	['OrderedList','UnorderedList','-','Outdent','Indent','Blockquote'],
+	['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
+	['Link','Unlink','Anchor'],
+	['Image','Flash','Table','Rule','Smiley','SpecialChar','PageBreak'],
+	'/',
+	['Style','FontFormat','FontName','FontSize'],
+	['TextColor','BGColor'],
+	['FitWindow','ShowBlocks','-','About','RemoteUpload']		// No comma for the last row.
+] ;
+
+
+========================================================================================================
+AD下，本软件首发自本人BLOG http://www.zfhu.com/blog
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+承接ASP网络程序项目的开发、修改、维护工作。
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+承接或合作开发制作企业宣传网站，企业网站SEO优化
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+QQ：2880127
+转载请注明出处，谢谢！请不要删除本说明文件。
+如果您觉得该软件对您有益处，捐助作者是您最好的表达方式！
+捐助支付宝：chen-stat@sohu.com
+感谢您的支持！
+2007-11-29 15:52:59
